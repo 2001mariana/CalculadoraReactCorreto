@@ -1,0 +1,54 @@
+:root {
+    --bg-botao: violet;
+    --border-botao: 1px solid white;
+}
+
+.botao{
+    font-size: 1.4em;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: var(--bg-botao);
+    outline: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 55px;
+}
+
+.botao:active {
+    background-color: rgb(158, 13, 102);
+}
+
+
+.botao.double{
+    grid-column: span 2;
+}
+
+.botao.triple{
+    grid-column: span 3;
+}
+
+.botao.total{
+    grid-column: span 4;
+}
+
+.botao.operacao{
+    background-color: rgb(158, 13, 102);
+}
+
+.botao.operacao:active{
+    background-color: violet ;
+}
+
+/*
+    --------------PARA DEIXAR OS BOTÕES REDONDOS--------------
+    .botao.round{
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    margin: auto;
+}
+    https://www.youtube.com/watch?v=NvER1sJqPyY 
+
+    */
